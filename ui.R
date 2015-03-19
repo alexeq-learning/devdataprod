@@ -18,7 +18,7 @@ shinyUI(fluidPage(
     helpText(
         span('This is a project for "Developing Data Products" class at Coursera.'),
         span('Sources are available on'),
-        a(href="http://github.com", "GitHub")
+        a(href="https://github.com/alexeq/devdataprod", "GitHub")
     ),
     
     # Sidebar with input controls
