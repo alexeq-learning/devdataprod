@@ -36,6 +36,7 @@ shinyServer(function(input, output) {
     output$summary <- renderText({
         if (bac() == 0) "Congratulations! You are good to go!" 
         else if (bac() <= 0.02) "You are allowed to drive in some countries, but be careful!"
+        else if (bac() >= 0.4) "Your level is dangerously high! Call the ambulance now!"
         else "Be safe and call taxi!"
     })
     

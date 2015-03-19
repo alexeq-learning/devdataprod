@@ -26,10 +26,8 @@ shinyUI(fluidPage(
         sidebarPanel(            
             selectInput('units', 'Select Measurement Units:', 
                 c("Kilograms" = "kg", "Pounds" = "lb")),
-            helpText("Play with controls to see results:"),            
-            
-            radioButtons("sex", "Gender:",
-                c("Male" = "male", "Female" = "female")),        
+            selectInput('sex', 'Gender:', 
+                c("Male" = "male", "Female" = "female")),
             numericInput("weight", "Body weight:", 
                 value = 65, min = 40, max = 300, step = 1),
             sliderInput("shots", "Number of shots:", 
